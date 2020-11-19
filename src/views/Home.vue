@@ -1,50 +1,49 @@
 <template>
   <div class="home flex">
-    <Card v-for="(data,index)in lists" :key="index" :city="data.city"/>
+    <Card v-for="(data, index) in lists" :key="index" :city="data.city" />
   </div>
 </template>
 
 <script>
 import Card from "../components/Card";
-export default{
-  data(){
-    return{
-      lists:[
+export default {
+  data() {
+    return {
+      lists: [
         {
-          city:"sapporo"
+          city: "sapporo"
         },
         {
-          city:"tokyo"
+          city: "tokyo"
         },
         {
-          city:"nagoya"
+          city: "nagoya"
         },
         {
-          city:"osaka"
+          city: "osaka"
         },
         {
-          city:"fukuoka"
+          city: "fukuoka"
         },
         {
-          city:"naha"
+          city: "naha"
         }
       ]
     };
   },
-  components:{
+  components: {
     Card
   }
 };
 </script>
 
 <style scoped>
-body{
-  background:#eee;
+body {
+  background: #eee;
 }
-.flex{
-  display:flex;
-  justify-content:
-  space-around;
-  flex-wrap:wrap;
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 </style>

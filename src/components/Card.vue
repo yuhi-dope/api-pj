@@ -1,18 +1,23 @@
 <template>
   <div class="card">
-    <img class="card-img" src="https://coachtech-video.s3-ap-northeast-1.amazonaws.com/clouds-449822_640.jpg"/>
+    <img
+      class="card-img"
+      src="https://coachtech-video.s3-ap-northeast-1.amazonaws.com/clouds-449822_640.jpg"
+    />
     <div class="card-content">
-      <h1 class="card-title">{{city}}</h1>
+      <h1 class="card-title">{{ city }}</h1>
     </div>
     <div class="card-link">
-      <a @click="$router.push({name: 'About',params:{city:city}})">About</a>
+      <a @click="$router.push({ name: 'About', params: { city: city } })"
+        >About</a
+      >
     </div>
   </div>
 </template>
 
 <script>
-export default{
-  props:["city"],
+export default {
+  props: ["city"],
 };
 </script>
 
